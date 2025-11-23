@@ -14,7 +14,7 @@ spec:
             parentRefs:
               - kind: Gateway
                 name: polom-gateway
-                namespace: nginx-gateway
+                namespace: default
 
 ---
 
