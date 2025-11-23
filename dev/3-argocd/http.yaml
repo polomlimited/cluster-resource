@@ -5,7 +5,8 @@ metadata:
   namespace: default
 spec:
   parentRefs:
-    - name: polom-gateway     # your Gateway
+    - name: polom-gateway
+      sectionName: https   # HTTPS listener
   hostnames:
     - "argocd.shanana.shop"
   rules:
@@ -14,11 +15,12 @@ spec:
             type: Prefix
             value: /
       backendRefs:
-        - name: argocd-server     # ArgoCD service name
+        - name: argocd-server
           port: 443
           kind: Service
       filters:
         - type: RequestHeaderModifier
           requestHeaderModifier:
             set:
-              X-Forwarded-Proto: "https"
+              - name: X-Forwarded-Proto
+                value: "https"
