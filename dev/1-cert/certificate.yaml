@@ -22,7 +22,7 @@ apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
   name: polom-cert
-  namespace: cert-manager
+  namespace: default   # must be in default so the gateway can use the certificate
 spec:
   secretName: tls-cert-secret   # Secret where the certificate will be stored
   dnsNames:
@@ -31,3 +31,4 @@ spec:
   issuerRef:
     name: polom-cl
     kind: ClusterIssuer
+
