@@ -6,13 +6,13 @@ metadata:
 spec:
   parentRefs:
     - name: polom-gateway
-      sectionName: https   # HTTPS listener
+      sectionName: https   # match the HTTPS listener
   hostnames:
     - "argocd.shanana.shop"
   rules:
     - matches:
         - path:
-            type: Prefix
+            type: PathPrefix   # <-- fixed here
             value: /
       backendRefs:
         - name: argocd-server
