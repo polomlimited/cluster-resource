@@ -7,6 +7,7 @@ spec:
   parentRefs:
     - name: polom-gateway
       namespace: default
+      sectionName: https
   hostnames:
     - argocd.shanana.shop
   rules:
@@ -16,4 +17,4 @@ spec:
             value: /
       backendRefs:
         - name: argocd-server
-          port: 443   # use this port
+          port: 80   # use this port
