@@ -4,7 +4,7 @@ metadata:
   name: polom-cl
 spec:
   acme:
-    email: shananatest@gmail.com
+    email: polomlimited@gmail.com
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: polom-key-secret  # ACME secret
