@@ -29,6 +29,7 @@ spec:
     - argocd.polom.shop
     - polom.shop
     - admin.polom.shop
+    - api.polom.shop
   issuerRef:
     name: polom-cl
     kind: ClusterIssuer
