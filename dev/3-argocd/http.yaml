@@ -9,7 +9,7 @@ spec:
       namespace: default # References your Gateway in default
       sectionName: https
   hostnames:
-    - argocd.shanana.shop
+    - argocd.polom.shop
   rules:
     - matches:
         - path:
