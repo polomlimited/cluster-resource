@@ -26,10 +26,10 @@ metadata:
 spec:
   secretName: tls-cert-secret   # Secret where the certificate will be stored
   dnsNames:
-    - argocd.polom.shop
-    - polom.shop
-    - admin.polom.shop
-    - api.polom.shop
+    - argocd.polomapp.rsvp
+    - polomapp.rsvp
+    - admin.polomapp.rsvp
+    - api.polomapp.rsvp
   issuerRef:
     name: polom-cl
     kind: ClusterIssuer

@@ -9,7 +9,7 @@ spec:
       namespace: default # References your Gateway in default
       sectionName: https
   hostnames:
-    - argocd.polom.shop
+    - argocd.polomapp.rsvp
   rules:
     - matches:
         - path:
