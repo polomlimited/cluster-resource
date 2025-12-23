@@ -1,12 +1,12 @@
 apiVersion: gateway.nginx.org/v1alpha1
 kind: ClientSettingsPolicy
 metadata:
-  name: large-uploads-policy
+  name: client-max-body-size-policy
   namespace: default
 spec:
   targetRef:
-    - group: gateway.networking.k8s.io
-      kind: Gateway
-      name: polom-gateway  # Or attach to specific HTTPRoutes
+    group: gateway.networking.k8s.io
+    kind: Gateway
+    name: polom-gateway
   body:
-    maxSize: "10m"
+    maxSize: 10m
