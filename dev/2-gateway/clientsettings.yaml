@@ -4,7 +4,7 @@ metadata:
   name: large-uploads-policy
   namespace: default
 spec:
-  targetRefs:
+  targetRef:
     - group: gateway.networking.k8s.io
       kind: Gateway
       name: polom-gateway  # Or attach to specific HTTPRoutes
